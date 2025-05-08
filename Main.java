@@ -1,0 +1,21 @@
+
+public class Main {
+	public static void main(String[]args) {
+		Triangulo t1=new Triangulo("Bermudas",20,10,15);
+		System.out.println(t1);
+	}//main
+	//Crear las clases de todas las figuras
+	//Interface Figura geometrica
+	//Implementar la interace en todas las figuras
+	public static void imprimirCalculos(Triangulo t) {
+		System.out.println(t);
+		System.out.println("+-----------------------+");
+		System.out.println("| El area de ["+t.getNombre()+"]");
+		System.out.println("| es "+t.calcularArea());
+		System.out.println("| El perimetro de ["+t.getNombre()+"]");
+		System.out.println("| es" +t.calcularPerimetro());
+		System.out.println("|+----------------------+");
+		
+		
+	}
+}
